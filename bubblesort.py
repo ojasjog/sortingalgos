@@ -11,7 +11,7 @@ def bubble_sort(A):
     return A
 
 
-newlist = list(map(int, input("Enter space separated numbers: ").split()))
+A = [44, 32, 78, 508, 99]
 
-print(bubble_sort(newlist))
+print(bubble_sort(A))
                 

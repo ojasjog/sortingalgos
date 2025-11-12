@@ -9,6 +9,6 @@ def selection_sort(A):
     print(A)
     
     
-newlist = list(map(int, input("Enter numbers separated by commas: ").split(",")))
+A = [99, 100, 34, 25]
 
-selection_sort(newlist)
+selection_sort(A)

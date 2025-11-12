@@ -1,12 +1,13 @@
 def insertion_sort(A):
     for i in range(1, len(A)):
-        for j in range(i-1, 0, -1):
-            if A[j]>A[j+1]:
-                A[j], A[j+1] = A[j+1], A[j]
-            else:
-                break
+        key = A[i] 
+        j = i - 1 
+        while j >= 0 and key < A[j]:
+            A[j + 1] = A[j] 
+            j -= 1
+        A[j + 1] = key
+        
     print(A)
 
-A = [1, 665, 25, 4, 76, 8, 46, 2, 1]
-
+A = [88, 665, 25, 4, 76, 8, 46, 2, 1]
 insertion_sort(A)
